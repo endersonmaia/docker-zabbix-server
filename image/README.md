@@ -2,11 +2,17 @@
 
 This is a Zabbix Server Dockerfile base on the [baseimage-docker from phusion](http://phusion.github.io/baseimage-docker/).
 
-Features :
+*Supported tags* :
+
+* 2.4, 2.4-mysql, latest -  By default, links to [MySQL Dockerfile](https://registry.hub.docker.com/_/mysql/)
+* 2.4-pgsql - To link to [Postgres Dockerfile](https://registry.hub.docker.com/_/postgres/)
+
+*Features* :
 
 * zabbix-server only;
 * [Slack](https://slack.com/) notification script;
 * Links to official [MySQL Dockerfile](https://registry.hub.docker.com/_/mysql/)
+* Links to official [Postgres Dockerfile](https://registry.hub.docker.com/_/postgres/)
 * Has ODBC and FreeTDS for database monitoring;
 
 -----------------------------------------
