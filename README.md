@@ -21,7 +21,7 @@ Features :
    * [Version](#version)
    * [Contributing?](#contrib)
  * [Quickstart](#quickstart)
- * [Using MySQL](#using_mysql)
+ * [Using MySQL](#using-mysql)
 
 -----------------------------------------
 
