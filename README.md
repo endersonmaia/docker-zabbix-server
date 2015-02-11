@@ -2,7 +2,7 @@
 
 This is a Zabbix Server Dockerfile base on the [baseimage-docker from phusion](http://phusion.github.io/baseimage-docker/).
 
-Features :
+**Features** :
 
 * zabbix-server only;
 * [Slack](https://slack.com/) notification script;
@@ -12,8 +12,12 @@ Features :
 -----------------------------------------
 
 **Related resources**:
-  [baseimage-docker](http://phusion.github.io/baseimage-docker/) |
+  [enderson/zabbix-server](https://github.com/endersonmaia/docker-zabbix-server) |
+  [enderson/zabbix-web](https://github.com/endersonmaia/docker-zabbix-web) |
+  [baseimage-docker](https://phusion.github.io/baseimage-docker/) |
   [Docker registry](https://index.docker.io/u/phusion/baseimage/)
+
+-----------------------------------------
 
 **Table of contents**
 
@@ -22,9 +26,9 @@ Features :
    * [Contributing](#contributing)
  * [Quickstart](#quickstart)
  * [Using MySQL](#using-mysql)
- * [Using PostgreSQL](#using_postgresql)
- * [Starting a Zabbix Web container](#starting_a_zabbix_web_container)
- * [Checking it all](#checking_it_all)
+ * [Using PostgreSQL](#using-postgresql)
+ * [Starting a Zabbix Web container](#starting-a-zabbix-web-container)
+ * [Checking it all](#checking-it-all)
 
 -----------------------------------------
 
