@@ -21,7 +21,7 @@ Features :
    * [Version](#version)
    * [Contributing?](#contrib)
  * [Quickstart](#quickstart)
- * [Using MySQL](#using_mysql)
+ * [Using MySQL](#using-mysql)
 
 -----------------------------------------
 
@@ -86,7 +86,7 @@ Create your MySQL database container with a [Data Volume Container](http://docs.
 Now that your MySQL database server is up and runnig, start your Zabbix Server container.
 
     $ docker run -d \
-      -p 10051:10051
+      -p 10051:10051 \
       --link zabbix-mysql:mysql \
       --name zabbix-server enderson/zabbix-server
 
@@ -95,7 +95,7 @@ In the previous command, we started a container named `zabbix-server` linked to 
 Now you can start a [Zabbix Web container](http://github.com/enderson/docker-zabbix-web).
 
     $ docker run -d \
-      -p 80:80
+      -p 80:80 \
       --link zabbix-mysql:mysql \
       --link zabbix-server:zbx \
       -e ZBX_SERVER_NAME=docker-zabbix-server \
