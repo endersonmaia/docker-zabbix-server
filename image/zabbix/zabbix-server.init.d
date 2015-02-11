@@ -24,7 +24,7 @@ fi
 
 count_tables=$(echo "SHOW TABLES; SELECT FOUND_ROWS();" | mysql -h$DB_HOST -u$DB_USER -p$DB_PASS $DB_NAME | grep "[0-9]")
 
-if [ $count_tables -eq "0" ]; then
+if [ "${count_tables}" -eq "0" ]; then
   /usr/bin/mysql -h$DB_HOST -u$DB_USER -p$DB_PASS $DB_NAME < /usr/share/zabbix-server-mysql/schema.sql
   /usr/bin/mysql -h$DB_HOST -u$DB_USER -p$DB_PASS $DB_NAME < /usr/share/zabbix-server-mysql/images.sql
   /usr/bin/mysql -h$DB_HOST -u$DB_USER -p$DB_PASS $DB_NAME < /usr/share/zabbix-server-mysql/data.sql
