@@ -26,7 +26,7 @@ export PGPASSWORD=$DB_PASS
 
 count_tables=$(/usr/bin/psql -q -h$DB_HOST -U$DB_USER $DB_NAME -c "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public';" | grep -v row | grep "[0-9]")
 
-if [ $count_tables -eq "0" ]; then
+if [ "${count_tables}" -eq "0" ]; then
   /usr/bin/psql -q -h$DB_HOST -U$DB_USER $DB_NAME -f /usr/share/zabbix-server-pgsql/schema.sql
   /usr/bin/psql -q -h$DB_HOST -U$DB_USER $DB_NAME -f /usr/share/zabbix-server-pgsql/images.sql
   /usr/bin/psql -q -h$DB_HOST -U$DB_USER $DB_NAME -f /usr/share/zabbix-server-pgsql/data.sql
